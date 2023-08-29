@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .page-wrapper {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  /** global classes styling **/
+  
+  .container {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 400;
+    border: 2px #000000 solid;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #6495ED;
+    color: #ffffff;
+    transition: 0.15s;
+    border: 2px #6495ED solid;
+  }
+  
+  .grid {
+    display: flex;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 9999;
+  }
+  
+  @media (max-width: 650px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  @media (max-width: 748px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  .logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 748px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 748px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 748px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    /*margin-top: 90px;*/
+  }
+  
+  @media (max-width: 748px) {
+    #hero {
+      margin-top: 120px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #hero {
+      margin-top: 180px;
+    }
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 1.350rem;
+    margin-bottom: 30px
+  }
+  
+  #hero > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  
+  #email {
+    max-width: 275px;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+  }
+  
+  #submit {
+    max-width: 275px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  section {
+    margin-top: 30px;
+    padding: 30px 30px 20px;
+  }
+  
+  #Products, #How_It_Works {
+    background-color: #eeeeee;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1060px) {
+    #Products, #How_It_Works {
+      border-radius: 0;
+    }
+  }
+  
+  #plans {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .plan {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  @media (max-width: 748px) {
+    #plans {
+      flex-direction: column;
+      width: 100%;
+    }
+    .plan {
+      width: 300px;
+      margin: 0 auto 20px;
+    }
+  }
+  
+  .level {
+    font-size: 1.5em;
+    color: #6495ED;
+    margin: 20px 5px;
+  }
+  
+  .plan > .desc {
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+  
+  .plan h2 {
+    position: absolute;
+    bottom: 60px;
+  }
+  
+  .plan > .btn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  
+  #brands {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3rem;
+    color: #6495ED;
+  }
+  
+  @media (max-width: 600px) {
+    #brands {
+      font-size: 2rem;
+    }
+  }
+  
+  iframe {
+    display: block;
+    max-width: 560px;
+    width: 100%;
+    margin: 10px auto 50px;
+  }
+  
+  #features {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .feature {
+    flex-direction: column;
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .feature > h3 {
+    font-size: 1.2em;
+    color: #6495ED;
+    margin-bottom: 20px;
+  }
+  
+  .feature > p {
+    line-height: 1.5;
+  }
+  
